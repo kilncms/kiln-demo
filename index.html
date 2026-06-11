@@ -1,1 +1,92 @@
-<!DOCTYPE html><html><head><title>Maple & Co.</title></head><body><h1>Kiln demo deploying…</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maple &amp; Co. — Handcrafted Goods</title>
+  <link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo" data-cms="nav_logo">Maple &amp; Co.</span>
+    <div class="nav-links">
+      <a href="/#about">About</a>
+      <a href="/blog/">Journal</a>
+      <a href="/members/">Members</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1 data-cms="hero_headline">Handcrafted goods made with intention.</h1>
+    <p data-cms="hero_subhead">
+      We design and build small-batch goods for people who appreciate
+      the craft behind the object.
+    </p>
+    <a href="/#contact" class="hero-cta" data-cms="hero_cta_text">See Our Work</a>
+  </section>
+
+  <section class="about" id="about">
+    <img class="about-img" data-cms="about_img" data-cms-attr="src"
+         src="/assets/img/workshop.svg" alt="Our workshop" />
+    <div class="about-text">
+      <p class="label">Our Story</p>
+      <h2 data-cms="about_headline">Made by hand, made to last.</h2>
+      <p data-cms="about_body">
+        We started Maple &amp; Co. out of a small workshop in 2018.
+        Every piece we make is designed to outlive trends, built
+        from materials we can trace, and finished with the kind of
+        care that disappears into the object itself. We're a small
+        team — we like it that way.
+      </p>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2 data-cms="services_headline">What We Make</h2>
+    <p class="intro" data-cms="services_intro">
+      Three categories. All made to order.
+    </p>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">🪵</div>
+        <h3 data-cms="service1_title">Furniture</h3>
+        <p data-cms="service1_desc">Custom tables, shelving, and storage built from hardwood and solid joinery. Lead time 6–10 weeks.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🕯️</div>
+        <h3 data-cms="service2_title">Home Goods</h3>
+        <p data-cms="service2_desc">Candles, ceramics, and textiles. Small runs, often seasonal. Follow our newsletter.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎁</div>
+        <h3 data-cms="service3_title">Custom Gifts</h3>
+        <p data-cms="service3_desc">Corporate and personal gifting. We work with you to design something that doesn't look like a gift set.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 data-cms="contact_headline">Let's talk.</h2>
+    <p data-cms="contact_body">
+      We don't have a form. Just email us directly — we respond within a day.
+    </p>
+    <p><strong data-cms="contact_email" data-cms-plain>hello@mapleandco.com</strong></p>
+  </section>
+
+  <footer>
+    <span data-cms="footer_text">© 2026 Maple &amp; Co. All rights reserved.</span>
+  </footer>
+
+  <script>
+    window.KILN = {
+      repo:   'erikkurtu/kiln-demo',
+      branch: 'main',
+      worker: 'https://kiln-auth.erikkwilder.workers.dev',
+    };
+  </script>
+  <script src="/assets/kiln.js" defer></script>
+
+</body>
+</html>
