@@ -14,4 +14,8 @@ window.KILN = {
     { label: 'Highlight', class: 'hl' },
     { label: 'Quiet',     class: 'quiet' },
   ],
+
+  // Managed by Kiln Settings
+  loginButton: false,
+  auth: { google: true, links: false },
 };
